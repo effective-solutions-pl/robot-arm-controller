@@ -36,4 +36,9 @@ public class ArmControllerImpl implements ArmController {
     public void setMinPosition(Servos s) {
         execute(s.getValue(), MinRequest.instance());
     }
+
+    @Override
+    public void setDegreePosition(Servos s, int degree) {
+        execute(s.getValue(), new DegreeRequest(degree));
+    }
 }

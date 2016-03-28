@@ -9,4 +9,6 @@ public interface ArmController {
 
     void setMinPosition(Servos s);
 
+    void setDegreePosition(Servos s, int degree);
+
 }
